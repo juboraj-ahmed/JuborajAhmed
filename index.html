@@ -1,382 +1,1117 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juboraj Ahmed - AI Researcher & ML Engineer</title>
-  <meta name="description" content="Juboraj Ahmed is a Computer Science graduate from BRAC University working on trustworthy machine learning, early sepsis monitoring, federated learning, and medical vision-language models." />
-  <meta property="og:title" content="Juboraj Ahmed - AI Researcher & ML Engineer" />
-  <meta property="og:description" content="Computer Science graduate from BRAC University. Research in trustworthy machine learning, clinical AI, and sepsis alerting." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://juboraj-ahmed.github.io/JuborajAhmed/" />
-  <link rel="canonical" href="https://juboraj-ahmed.github.io/JuborajAhmed/" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=3" />
-</head>
-<body>
-  <header>
-    <nav id="navbar" aria-label="Main navigation">
-      <div class="nav-container">
-        <a href="#hero" class="nav-logo" aria-label="Juboraj Ahmed - back to top">Juboraj<span class="accent">.</span></a>
-        <ul class="nav-links" role="list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#research" class="nav-link">Research</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#blog" class="nav-link">Writings</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button id="theme-toggle" aria-label="Toggle colour theme">
-            <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-          <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
-        </div>
-      </div>
-      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-        <ul role="list">
-          <li><a href="#about" class="mobile-link">About</a></li>
-          <li><a href="#research" class="mobile-link">Research</a></li>
-          <li><a href="#projects" class="mobile-link">Projects</a></li>
-          <li><a href="#education" class="mobile-link">Education</a></li>
-          <li><a href="#blog" class="mobile-link">Writings</a></li>
-          <li><a href="#contact" class="mobile-link">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section id="hero" aria-labelledby="hero-heading">
-      <div class="hero-content">
-        <div class="hero-eyebrow reveal"><span class="hero-dot" aria-hidden="true"></span>Open to Ph.D. and research opportunities</div>
-        <div class="hero-layout reveal">
-          <div class="hero-text">
-            <h1 class="hero-greeting" id="hero-heading">Hi, I'm Juboraj.</h1>
-            <p class="hero-intro">I'm a Computer Science graduate from BRAC University focused on trustworthy machine learning, clinical decision systems, early sepsis monitoring, and federated learning. I investigate failure modes in patient-level personalization, empirical threshold adaptation, and model reliability in high-stakes clinical settings.</p>
-            <nav class="hero-links" aria-label="Quick links">
-              <a href="#research" class="hero-link">Research</a>
-              <span class="hero-link-sep" aria-hidden="true"></span>
-              <a href="#projects" class="hero-link">Projects</a>
-              <span class="hero-link-sep" aria-hidden="true"></span>
-              <a href="assets/Resume_Juboraj_Ahmed.pdf" class="hero-link" target="_blank" rel="noopener noreferrer" download>CV</a>
-              <span class="hero-link-sep" aria-hidden="true"></span>
-              <a href="https://github.com/juboraj-ahmed" class="hero-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </nav>
-          </div>
-          <div class="hero-portrait-col">
-            <img src="assets/photo.jpg" alt="Portrait of Juboraj Ahmed" class="hero-portrait" width="136" height="136" onerror="this.style.display='none'" />
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <p class="section-label reveal">About</p>
-        <h2 class="section-title reveal" id="about-heading">Background</h2>
-        <div class="about-layout">
-          <div class="about-main reveal">
-            <p class="about-bio">I am a Computer Science graduate from <strong>BRAC University</strong>, Dhaka, Bangladesh. My research investigates reliability and failure modes in high-stakes clinical machine learning, focusing on patient heterogeneity, early sepsis alerting, and distributed learning.</p>
-            <p class="about-bio">My core manuscript investigates directional constraints on personalized alert thresholds in early sepsis monitoring using Empirical Bayes methods across 40,336 ICU patients. In my undergraduate thesis, I designed <strong>JASAL</strong>, an edge-deployable federated learning architecture for physiological anomaly detection with differential privacy. I am also investigating calibration breakdown and prompt sensitivity in medical vision-language models.</p>
-            <p class="about-bio">My long-term goal is to pursue <strong>doctoral research</strong> in machine learning, developing robust and verifiable decision systems for healthcare and high-consequence domains.</p>
-            <div class="cv-link-block">
-              <a href="assets/Resume_Juboraj_Ahmed.pdf" class="cv-link" target="_blank" rel="noopener noreferrer" download>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download CV
-              </a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#faf9f6">
+    <title>Juboraj Ahmed — AI Researcher & Machine Learning Engineer</title>
+    <meta name="description"
+        content="Juboraj Ahmed is a CSE graduate from BRAC University working on trustworthy AI, clinical machine learning, federated learning, and LLM security.">
+    <meta property="og:title" content="Juboraj Ahmed — AI Researcher & Machine Learning Engineer">
+    <meta property="og:description"
+        content="Research in trustworthy AI, clinical machine learning, and privacy-aware intelligent systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://juboraj-ahmed.github.io/JuborajAhmed/">
+    <link rel="canonical" href="https://juboraj-ahmed.github.io/JuborajAhmed/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #faf9f6;
+            --surface: #fff;
+            --text: #222723;
+            --muted: #676d68;
+            --fine: #8a8e88;
+            --line: #dedfd9;
+            --accent: #315f57;
+            --accent-wash: #eaf0eb;
+            --max: 1060px;
+            --body: 'DM Sans', sans-serif;
+            --display: 'Instrument Serif', Georgia, serif
+        }
+
+        [data-theme=dark] {
+            color-scheme: dark;
+            --bg: #171b19;
+            --surface: #1e2521;
+            --text: #f1f1ea;
+            --muted: #b1b9b1;
+            --fine: #8f9a91;
+            --line: #39413b;
+            --accent: #a4d1bf;
+            --accent-wash: #25372f
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font: 16px/1.75 var(--body);
+            -webkit-font-smoothing: antialiased
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: var(--accent)
+        }
+
+        button {
+            font: inherit
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        ::selection {
+            background: var(--accent-wash)
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 5px
+        }
+
+        .container {
+            max-width: var(--max);
+            margin: auto;
+            padding: 0 34px
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -80px;
+            left: 16px;
+            background: var(--surface);
+            padding: 8px;
+            z-index: 999
+        }
+
+        .skip-link:focus {
+            top: 8px
+        }
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: color-mix(in srgb, var(--bg) 93%, transparent);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .nav-inner {
+            max-width: var(--max);
+            padding: 0 34px;
+            margin: auto;
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px
+        }
+
+        .wordmark {
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: -.06em;
+            white-space: nowrap
+        }
+
+        .wordmark span {
+            color: var(--accent)
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 27px;
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 600;
+            transition: color .2s
+        }
+
+        .nav-links a:hover,
+        .nav-links a[aria-current=location] {
+            color: var(--accent)
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 7px
+        }
+
+        .icon-button {
+            background: none;
+            border: 0;
+            color: var(--text);
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            cursor: pointer
+        }
+
+        .icon-button:hover {
+            background: var(--accent-wash)
+        }
+
+        .menu-button {
+            display: none
+        }
+
+        .menu-button span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background: currentColor;
+            margin: 4px 0
+        }
+
+        .mobile-links {
+            display: none
+        }
+
+        .eyebrow,
+        .section-kicker,
+        .micro {
+            color: var(--accent);
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .16em
+        }
+
+        .hero {
+            padding: 112px 0 116px;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 190px;
+            gap: 50px;
+            align-items: center
+        }
+
+        .hero .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .status-dot {
+            display: inline-block;
+            background: #749c81;
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+            box-shadow: 0 0 0 4px var(--accent-wash)
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 0
+        }
+
+        h1 {
+            font: normal clamp(66px, 8vw, 112px)/.98 var(--display);
+            letter-spacing: -.04em;
+            margin: 24px 0 24px
+        }
+
+        h1 em {
+            font-weight: normal;
+            color: var(--accent)
+        }
+
+        .hero-lede {
+            font-size: clamp(18px, 2vw, 22px);
+            line-height: 1.55;
+            letter-spacing: -.025em;
+            max-width: 730px;
+            margin-bottom: 22px
+        }
+
+        .hero-summary {
+            max-width: 660px;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.85
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 23px;
+            flex-wrap: wrap;
+            margin-top: 32px
+        }
+
+        .text-link {
+            font-weight: 700;
+            font-size: 13px;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 3px
+        }
+
+        .text-link:after {
+            content: ' ↗';
+            color: var(--accent)
+        }
+
+        .portrait {
+            height: 190px;
+            width: 190px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 6px solid var(--surface);
+            filter: saturate(.85)
+        }
+
+        .portrait-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end
+        }
+
+        .portrait-fallback {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            background: var(--accent-wash);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font: 64px var(--display);
+            color: var(--accent)
+        }
+
+        section.content-section {
+            padding: 92px 0;
+            border-bottom: 1px solid var(--line)
+        }
+
+        .section-heading {
+            display: grid;
+            grid-template-columns: 230px minmax(0, 1fr);
+            gap: 55px;
+            margin-bottom: 39px
+        }
+
+        .section-kicker {
+            padding-top: 16px
+        }
+
+        .section-heading h2 {
+            font: normal clamp(38px, 4vw, 57px)/1.08 var(--display);
+            letter-spacing: -.025em;
+            margin: 0
+        }
+
+        .section-description {
+            color: var(--muted);
+            max-width: 620px;
+            margin: 14px 0 0;
+            font-size: 15px
+        }
+
+        .content-offset {
+            margin-left: 285px
+        }
+
+        .entry {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 40px;
+            padding: 31px 0;
+            border-top: 1px solid var(--line)
+        }
+
+        .entry:first-child {
+            border-top: 0
+        }
+
+        .meta {
+            color: var(--fine);
+            font-size: 12px;
+            line-height: 1.65
+        }
+
+        .meta strong {
+            color: var(--accent);
+            font-weight: 700;
+            display: block
+        }
+
+        .entry h3 {
+            font-size: 20px;
+            line-height: 1.45;
+            font-weight: 600;
+            letter-spacing: -.035em;
+            margin: 0 0 8px
+        }
+
+        .entry p {
+            color: var(--muted);
+            font-size: 14px;
+            max-width: 650px;
+            margin: 0 0 13px
+        }
+
+        .entry .byline {
+            font-size: 12px;
+            color: var(--fine);
+            margin-bottom: 12px
+        }
+
+        .pill-list {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap;
+            margin-top: 16px
+        }
+
+        .pill {
+            border: 1px solid var(--line);
+            border-radius: 100px;
+            padding: 3px 10px;
+            font-size: 11px;
+            color: var(--muted);
+            line-height: 1.5
+        }
+
+        .entry-links {
+            display: flex;
+            gap: 18px;
+            margin-top: 17px
+        }
+
+        .entry-links a {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent)
+        }
+
+        .entry-links a:after {
+            content: ' ↗'
+        }
+
+        .about-copy p {
+            max-width: 690px;
+            color: var(--muted);
+            margin-bottom: 17px
+        }
+
+        .about-copy strong {
+            color: var(--text)
+        }
+
+        .detail-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid var(--line)
+        }
+
+        .detail-columns h3 {
+            font-size: 13px;
+            margin-bottom: 9px
+        }
+
+        .detail-columns p {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .project-list .entry {
+            grid-template-columns: 60px 1fr;
+            gap: 26px
+        }
+
+        .project-index {
+            color: var(--fine);
+            font: italic 25px var(--display)
+        }
+
+        .project-topline {
+            font-size: 12px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 4px
+        }
+
+        .project-title-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px
+        }
+
+        .project-title-row h3 {
+            font-size: 21px
+        }
+
+        .project-description {
+            max-width: 750px
+        }
+
+        .simple-list {
+            margin-top: 28px;
+            border-top: 1px solid var(--line)
+        }
+
+        .simple-item {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            padding: 17px 0;
+            border-bottom: 1px solid var(--line);
+            align-items: start
+        }
+
+        .simple-item b {
+            font-size: 14px
+        }
+
+        .simple-item p {
+            font-size: 13px;
+            color: var(--muted);
+            margin: 2px 0 0
+        }
+
+        .simple-item a {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 700;
+            white-space: nowrap
+        }
+
+        .minor-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .05em;
+            margin: 45px 0 12px
+        }
+
+        .education-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px
+        }
+
+        .small-note {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .writing-item {
+            display: grid;
+            grid-template-columns: 65px 1fr auto;
+            gap: 20px;
+            align-items: baseline;
+            padding: 20px 0;
+            border-top: 1px solid var(--line)
+        }
+
+        .writing-item h3 {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin: 0
+        }
+
+        .writing-item p {
+            font-size: 13px;
+            color: var(--muted);
+            margin: 5px 0 0
+        }
+
+        .writing-item>a {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--accent);
+            white-space: nowrap
+        }
+
+        .contact-lede {
+            font: normal clamp(30px, 3.6vw, 44px)/1.2 var(--display);
+            max-width: 650px
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 25px
+        }
+
+        .contact-links a {
+            color: var(--accent);
+            border-bottom: 1px solid var(--accent);
+            font-size: 14px;
+            font-weight: 700
+        }
+
+        .footer-inner {
+            padding: 27px 34px;
+            max-width: var(--max);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            color: var(--muted);
+            font-size: 12px
+        }
+
+        @media(max-width:850px) {
+            .nav-links {
+                gap: 14px
+            }
+
+            .nav-links a {
+                font-size: 12px
+            }
+
+            .section-heading {
+                grid-template-columns: 170px 1fr;
+                gap: 28px
+            }
+
+            .content-offset {
+                margin-left: 198px
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr 150px;
+                gap: 20px
+            }
+
+            .portrait,
+            .portrait-fallback {
+                width: 145px;
+                height: 145px
+            }
+
+            .entry {
+                grid-template-columns: 110px 1fr;
+                gap: 24px
+            }
+        }
+
+        @media(max-width:650px) {
+            html {
+                scroll-padding-top: 74px
+            }
+
+            .container,
+            .nav-inner {
+                padding-left: 22px;
+                padding-right: 22px
+            }
+
+            .nav-inner {
+                height: 68px
+            }
+
+            .nav-links {
+                display: none
+            }
+
+            .menu-button {
+                display: grid
+            }
+
+            .mobile-links {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                border-top: 1px solid var(--line);
+                padding: 10px 22px 18px;
+                background: var(--bg)
+            }
+
+            .mobile-links.open {
+                display: flex
+            }
+
+            .mobile-links a {
+                padding: 10px 0;
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--text)
+            }
+
+            .hero {
+                padding: 68px 0 76px
+            }
+
+            .hero-grid {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 20px
+            }
+
+            .portrait-wrap {
+                justify-content: flex-start
+            }
+
+            .portrait,
+            .portrait-fallback {
+                height: 92px;
+                width: 92px;
+                border-width: 3px
+            }
+
+            h1 {
+                font-size: clamp(58px, 13vw, 85px);
+                margin: 18px 0
+            }
+
+            .hero-lede {
+                font-size: 18px
+            }
+
+            .hero-links {
+                gap: 18px
+            }
+
+            .content-section,
+            .content-section {
+                padding: 65px 0
+            }
+
+            .section-heading {
+                display: block;
+                margin-bottom: 23px
+            }
+
+            .section-kicker {
+                margin-bottom: 14px
+            }
+
+            .section-heading h2 {
+                font-size: 42px
+            }
+
+            .content-offset {
+                margin: 0
+            }
+
+            .entry {
+                grid-template-columns: 1fr;
+                gap: 7px;
+                padding: 24px 0
+            }
+
+            .entry h3 {
+                font-size: 19px
+            }
+
+            .meta strong {
+                display: inline;
+                margin-right: 8px
+            }
+
+            .project-list .entry {
+                grid-template-columns: 35px 1fr;
+                gap: 12px
+            }
+
+            .detail-columns {
+                grid-template-columns: 1fr;
+                gap: 10px
+            }
+
+            .writing-item {
+                grid-template-columns: 1fr auto;
+                gap: 8px
+            }
+
+            .writing-item .meta {
+                grid-column: 1/-1
+            }
+
+            .footer-inner {
+                padding: 25px 22px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            *,
+            *:before,
+            *:after {
+                transition: none !important;
+                animation: none !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header class="site-nav">
+        <nav class="nav-inner" aria-label="Main navigation">
+            <a class="wordmark" href="#top" aria-label="Juboraj Ahmed, back to top">juboraj<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#writing">Writing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions"><button class="icon-button" id="theme-toggle" aria-label="Switch to dark theme"
+                    title="Toggle theme"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                    </svg></button><button class="icon-button menu-button" id="menu-button" aria-label="Open menu"
+                    aria-expanded="false" aria-controls="mobile-links"><span></span><span></span><span></span></button>
             </div>
-          </div>
-          <aside class="about-sidebar reveal" aria-label="Research interests and skills">
-            <div class="sidebar-block">
-              <h3 class="sidebar-heading">Research Interests</h3>
-              <ul class="interest-list">
-                <li>Trustworthy Artificial Intelligence</li>
-                <li>Vision-Language Models</li>
-                <li>Federated Learning</li>
-                <li>LLM Security</li>
-                <li>AI for Healthcare</li>
-                <li>Privacy-Preserving Machine Learning</li>
-              </ul>
+        </nav>
+        <div id="mobile-links" class="mobile-links"><a href="#about">About</a><a href="#research">Research</a><a
+                href="#projects">Projects</a><a href="#education">Education</a><a href="#writing">Writing</a><a
+                href="#contact">Contact</a></div>
+    </header>
+    <main id="main">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Research &amp; engineering
+                        opportunities</div>
+                    <h1 id="hero-title">Hi, I'm <em>Juboraj.</em></h1>
+                    <p class="hero-lede">I research how to make intelligent systems more reliable, secure, and useful.
+                    </p>
+                    <p class="hero-summary">I'm a Computer Science and Engineering graduate from BRAC University. My
+                        interests span trustworthy AI, clinical machine learning, federated learning, and LLM security —
+                        from careful experiments to working software.</p>
+                    <div class="hero-links"><a class="text-link" href="#research">Research</a><a class="text-link"
+                            href="#projects">Projects</a><a class="text-link" href="assets/Resume_Juboraj_Ahmed.pdf"
+                            download>CV</a><a class="text-link" href="https://github.com/juboraj-ahmed" target="_blank"
+                            rel="noopener noreferrer">GitHub</a></div>
+                </div>
+                <div class="portrait-wrap"><img class="portrait" src="assets/photo.jpg" alt="Portrait of Juboraj Ahmed"
+                        width="190" height="190"
+                        onerror="this.hidden=true;this.nextElementSibling.style.display='flex'">
+                    <div class="portrait-fallback" aria-hidden="true">J.</div>
+                </div>
             </div>
-            <div class="sidebar-block">
-              <h3 class="sidebar-heading">Technical Skills</h3>
-              <div class="skills-table">
-                <div class="skills-row"><span class="skills-row-label">Languages</span><span class="skills-row-values">Python, C++, SQL, JavaScript</span></div>
-                <div class="skills-row"><span class="skills-row-label">ML / DL</span><span class="skills-row-values">PyTorch, TensorFlow, Scikit-learn, Hugging Face</span></div>
-                <div class="skills-row"><span class="skills-row-label">Methods</span><span class="skills-row-values">Federated Learning, Transformers, CNNs, VAEs, LSTMs</span></div>
-                <div class="skills-row"><span class="skills-row-label">Backend</span><span class="skills-row-values">Flask, Django, REST APIs, PostgreSQL</span></div>
-                <div class="skills-row"><span class="skills-row-label">Tools</span><span class="skills-row-values">Git, Docker, Linux, LaTeX, W&amp;B, Jupyter</span></div>
-              </div>
+        </section>
+
+        <section class="content-section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-kicker">01 / About</div>
+                    <h2 id="about-title">A little about me.</h2>
+                </div>
+                <div class="content-offset about-copy">
+                    <p>I'm a Computer Science and Engineering graduate from <strong>BRAC University</strong> in Dhaka,
+                        Bangladesh. I'm interested in a deceptively simple question: how do we know when an AI system
+                        can be trusted?</p>
+                    <p>That question informs my work on patient-specific sepsis alerts, privacy-aware federated
+                        monitoring, and the reliability of medical vision-language models. Alongside research, I enjoy
+                        building practical ML tools and backend applications.</p>
+                    <p>I'm pursuing opportunities to conduct doctoral research and contribute to thoughtful AI/ML
+                        engineering teams.</p>
+                    <div class="detail-columns">
+                        <div>
+                            <h3>Research interests</h3>
+                            <p>Trustworthy AI · Clinical ML · Federated Learning · Medical VLMs · LLM Security</p>
+                        </div>
+                        <div>
+                            <h3>Engineering toolkit</h3>
+                            <p>Python · PyTorch · TensorFlow · scikit-learn · Django · Flask · SQL · Docker · Git</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sidebar-block">
-              <h3 class="sidebar-heading">English Proficiency</h3>
-              <div class="score-display">
-                <span class="score-main">100</span>
-                <span class="score-sub">/ 120 TOEFL iBT &nbsp;&middot;&nbsp; C1 Advanced (CEFR)</span>
-              </div>
+        </section>
+
+        <section class="content-section" id="research" aria-labelledby="research-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-kicker">02 / Research</div>
+                    <div>
+                        <h2 id="research-title">Questions worth investigating.</h2>
+                        <p class="section-description">My work explores the reliability of machine learning where errors
+                            can have real consequences.</p>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="meta"><strong>Manuscript completed</strong>2026 · Preparing for submission</div>
+                    <div>
+                        <h3>Directional Constraints for Patient-Specific Alert Thresholds in Early Sepsis Monitoring: An
+                            Empirical Bayes Analysis</h3>
+                        <p class="byline">Collaborative research with Dr. Md Tuhin Sheikh</p>
+                        <p>Investigated why patient-specific alert thresholds can reduce false alarms yet suppress early
+                            sepsis warnings. Evaluated directionally constrained Empirical Bayes adaptation using 40,336
+                            ICU patient records, comparing sensitivity and clinical utility across multiple adaptation
+                            histories.</p>
+                        <p>The constrained approach mitigated losses associated with unrestricted personalization;
+                            superiority over the global threshold was not conclusively established.</p>
+                        <div class="pill-list"><span class="pill">Clinical ML</span><span class="pill">Empirical
+                                Bayes</span><span class="pill">Sepsis</span><span class="pill">PhysioNet 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="meta"><strong>Undergraduate thesis</strong>2025–2026</div>
+                    <div>
+                        <h3>JASAL: A Remote Patient Health Monitoring System Driven by Federated Learning</h3>
+                        <p class="byline">BRAC University · Undergraduate thesis</p>
+                        <p>Developed a privacy-aware federated anomaly detection system using 32,796 physiological
+                            records across 10 non-IID client partitions. Explored adaptive patient profiles,
+                            differential privacy, secure computation, and INT8 quantization.</p>
+                        <div class="pill-list"><span class="pill">Federated Learning</span><span
+                                class="pill">Privacy</span><span class="pill">Anomaly Detection</span><span
+                                class="pill">Edge ML</span></div>
+                    </div>
+                </div>
+                <div class="entry">
+                    <div class="meta"><strong>Ongoing research</strong>2026–Present</div>
+                    <div>
+                        <h3>Trustworthy Vision-Language Models for Medical Image Understanding</h3>
+                        <p>Exploring model calibration, hallucination, and sensitivity to misleading prompts in medical
+                            vision-language models, with an emphasis on reliability in consequential settings.</p>
+                        <div class="pill-list"><span class="pill">Medical VLMs</span><span
+                                class="pill">Robustness</span><span class="pill">Model Reliability</span></div>
+                    </div>
+                </div>
             </div>
-          </aside>
+        </section>
+
+        <section class="content-section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-kicker">03 / Projects</div>
+                    <div>
+                        <h2 id="projects-title">Things I've built.</h2>
+                        <p class="section-description">Selected tools and applications at the intersection of machine
+                            learning, security, and software engineering.</p>
+                    </div>
+                </div>
+                <div class="project-list">
+                    <article class="entry">
+                        <div class="project-index">01</div>
+                        <div>
+                            <div class="project-topline">LLM Security</div>
+                            <div class="project-title-row">
+                                <h3>PromptPoisonLab</h3>
+                            </div>
+                            <p>A research toolkit for generating and evaluating adversarial prompt datasets, with
+                                evolutionary mutation, FAISS-based semantic deduplication, and experiment logging.</p>
+                            <div class="pill-list"><span class="pill">Python</span><span
+                                    class="pill">Streamlit</span><span class="pill">FAISS</span><span
+                                    class="pill">Docker</span></div>
+                            <div class="entry-links"><a href="https://github.com/juboraj-ahmed/PromptPoisionLab"
+                                    target="_blank" rel="noopener noreferrer">Source code</a></div>
+                        </div>
+                    </article>
+                    <article class="entry">
+                        <div class="project-index">02</div>
+                        <div>
+                            <div class="project-topline">LLM Evaluation</div>
+                            <h3>Prompt Injection Playground</h3>
+                            <p>Interactive environment for testing prompt-injection strategies, comparing model
+                                responses, and recording structured experiments.</p>
+                            <div class="pill-list"><span class="pill">Python</span><span
+                                    class="pill">Streamlit</span><span class="pill">OpenAI API</span><span
+                                    class="pill">Plotly</span></div>
+                            <div class="entry-links"><a
+                                    href="https://github.com/juboraj-ahmed/Prompt-Injection-Playground" target="_blank"
+                                    rel="noopener noreferrer">Source code</a></div>
+                        </div>
+                    </article>
+                    <article class="entry">
+                        <div class="project-index">03</div>
+                        <div>
+                            <div class="project-topline">Natural Language Processing</div>
+                            <h3>AI Context Analyst</h3>
+                            <p>Multi-class text classification pipeline comparing neural methods against traditional
+                                baselines, with a Flask deployment and modular preprocessing.</p>
+                            <div class="pill-list"><span class="pill">TensorFlow</span><span
+                                    class="pill">scikit-learn</span><span class="pill">LSTM</span><span
+                                    class="pill">Flask</span></div>
+                            <div class="entry-links"><a href="https://github.com/juboraj-ahmed/AI-Sentiment-Analyst"
+                                    target="_blank" rel="noopener noreferrer">Source code</a><a
+                                    href="https://juboraj007-ai-sentiment-analyst.hf.space" target="_blank"
+                                    rel="noopener noreferrer">Live demo</a></div>
+                        </div>
+                    </article>
+                    <article class="entry">
+                        <div class="project-index">04</div>
+                        <div>
+                            <div class="project-topline">Applied Healthcare ML</div>
+                            <h3>MediTrack</h3>
+                            <p>Django application integrating gradient-boosting health risk predictions with
+                                visualizations of user history and risk categories.</p>
+                            <div class="pill-list"><span class="pill">Django</span><span
+                                    class="pill">scikit-learn</span><span class="pill">PostgreSQL</span><span
+                                    class="pill">Chart.js</span></div>
+                            <div class="entry-links"><a href="https://github.com/juboraj-ahmed/MediTrack"
+                                    target="_blank" rel="noopener noreferrer">Source code</a><a
+                                    href="https://meditrack-1-xjxy.onrender.com" target="_blank"
+                                    rel="noopener noreferrer">Live demo</a></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="content-offset">
+                    <h3 class="minor-title">Also explored</h3>
+                    <div class="simple-list">
+                        <div class="simple-item">
+                            <div><b>SonicVAE</b>
+                                <p>Learning music representations from Mel spectrograms with a variational autoencoder.
+                                </p>
+                            </div><a href="https://github.com/juboraj-ahmed/SonicVAE" target="_blank"
+                                rel="noopener noreferrer">GitHub ↗</a>
+                        </div>
+                        <div class="simple-item">
+                            <div><b>MediConnect</b>
+                                <p>Flask-based healthcare platform connecting patients, doctors, and pharmacies.</p>
+                            </div><a href="https://github.com/juboraj-ahmed/MediConnect" target="_blank"
+                                rel="noopener noreferrer">GitHub ↗</a>
+                        </div>
+                        <div class="simple-item">
+                            <div><b>Climate Explorer</b>
+                                <p>Django application for exploring climate data and API-driven visualizations.</p>
+                            </div><a href="https://github.com/juboraj-ahmed/Climate_Change_Project" target="_blank"
+                                rel="noopener noreferrer">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="education" aria-labelledby="education-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-kicker">04 / Education</div>
+                    <h2 id="education-title">The foundation.</h2>
+                </div>
+                <div class="content-offset">
+                    <h3 class="education-title">BSc in Computer Science and Engineering</h3>
+                    <p class="small-note">BRAC University · Dhaka, Bangladesh · Graduated Spring 2026</p>
+                    <p class="small-note">Selected areas: Artificial Intelligence, Natural Language Processing, Machine
+                        Learning, Algorithms, Operating Systems, and Software Engineering.</p>
+                    <p class="small-note">TOEFL iBT: 100/120</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="writing" aria-labelledby="writing-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-kicker">05 / Writing</div>
+                    <div>
+                        <h2 id="writing-title">Notes and perspectives.</h2>
+                        <p class="section-description">Technical explanations and longer-form work beyond code.</p>
+                    </div>
+                </div>
+                <div class="content-offset">
+                    <div class="writing-item">
+                        <div class="meta">2025</div>
+                        <div>
+                            <h3>Can a Self-Driving Car's Architecture Power a Home Robot?</h3>
+                            <p>On adapting perception and sensor-fusion systems to domestic robotics.</p>
+                        </div><a href="writings/Can_a_Self_Driving_Car_s_Architecture_Power_a_Home_Robot_.pdf"
+                            target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    </div>
+                    <div class="writing-item">
+                        <div class="meta">2025</div>
+                        <div>
+                            <h3>Understanding Unix File Permissions and Extended Access Control Lists</h3>
+                            <p>A practical guide to Linux permissions and ACLs.</p>
+                        </div><a
+                            href="writings/Understanding_Unix_File_Permissions_and_Extended_Access_Control_Lists.pdf"
+                            target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    </div>
+                    <div class="writing-item">
+                        <div class="meta">2025</div>
+                        <div>
+                            <h3>Justice Denied: Confronting the Constitutional Breakdown Enabling Extrajudicial Killings
+                                in Bangladesh</h3>
+                            <p>Policy analysis of legal accountability and constitutional protection.</p>
+                        </div><a
+                            href="writings/Policy Brief Justice Denied_ Confronting the Constitutional Breakdown Enabling Extrajudicial Killings in Bangladesh.pdf"
+                            target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    </div>
+                    <div class="writing-item">
+                        <div class="meta">2025</div>
+                        <div>
+                            <h3>Akhand Bharat Conspiracy Theory</h3>
+                            <p>Critical analysis of historical and geopolitical narratives in South Asia.</p>
+                        </div><a href="writings/Akhand Bharat Conspiracy Theory.pdf" target="_blank"
+                            rel="noopener noreferrer">Read ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="section-kicker">06 / Contact</div>
+                    <h2 id="contact-title">Let's connect.</h2>
+                </div>
+                <div class="content-offset">
+                    <p class="contact-lede">Have a research idea, an engineering opportunity, or just something
+                        interesting to discuss?</p>
+                    <p class="small-note">I'm interested in PhD research, AI/ML engineering positions, and thoughtful
+                        collaborations.</p>
+                    <div class="contact-links"><a href="mailto:juborajahmed0213@gmail.com">Email ↗</a><a
+                            href="https://github.com/juboraj-ahmed" target="_blank" rel="noopener noreferrer">GitHub
+                            ↗</a><a href="https://www.linkedin.com/in/juboraj-ahmed-95709824a" target="_blank"
+                            rel="noopener noreferrer">LinkedIn ↗</a><a href="assets/Resume_Juboraj_Ahmed.pdf"
+                            download>Download CV ↗</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner"><span>© 2026 Juboraj Ahmed · Dhaka, Bangladesh</span><a href="#top">Back to top ↑</a>
         </div>
-      </div>
-    </section>
-    <section id="research" aria-labelledby="research-heading">
-      <div class="container">
-        <p class="section-label reveal">Research</p>
-        <h2 class="section-title reveal" id="research-heading">Research Experience</h2>
-        <p class="research-intro reveal">My work focuses on building machine learning systems that are reliable under real-world conditions -- across privacy constraints, adversarial environments, and limited computational budgets.</p>
-        <div class="research-list">
-          <article class="research-entry research-entry-featured reveal" aria-labelledby="research-sepsis-title">
-            <div class="research-meta">
-              <span class="research-status-badge status-manuscript">Completed Manuscript</span>
-              <p class="research-year">Submitting 2026</p>
-            </div>
-            <div class="research-entry-body">
-              <div class="research-entry-header">
-                <span class="research-pill-flag">Lead Research Manuscript</span>
-              </div>
-              <h3 class="research-entry-title" id="research-sepsis-title">Directional Constraints for Patient-Specific Alert Thresholds in Early Sepsis Monitoring: An Empirical Bayes Analysis</h3>
-              <p class="research-authors">Juboraj Ahmed &middot; Completed Manuscript; preparing for journal submission 2026</p>
-              <p class="research-desc">This study investigates whether adapting alert thresholds to individual ICU patients improves sepsis detection or inadvertently delays intervention by treating early physiological deterioration as benign baseline heterogeneity.</p>
-              <ul class="research-bullets">
-                <li>Investigated a failure mode of personalized clinical alerting in which early disease-related risk is misinterpreted as stable patient heterogeneity, potentially elevating alert thresholds and suppressing early warnings.</li>
-                <li>Developed and evaluated Directionally Constrained Empirical Bayes (DC-EB) threshold adaptation, restricting upward personalization while retaining patient-specific downward adjustment.</li>
-                <li>Evaluated thresholding strategies on the PhysioNet/CinC 2019 sepsis dataset comprising 40,336 ICU patients, using 8-, 12-, and 24-hour adaptation histories, patient-level data partitions, and 2,000 paired bootstrap replicates.</li>
-                <li>Found that directional constraints mitigated sensitivity and normalized clinical-utility losses associated with unrestricted personalization, although superiority over the optimized Global threshold was not conclusively established.</li>
-              </ul>
-              <div class="research-tags-row">
-                <span class="research-tag">Clinical Machine Learning</span>
-                <span class="research-tag">Empirical Bayes</span>
-                <span class="research-tag">Sepsis Monitoring</span>
-                <span class="research-tag">PhysioNet/CinC 2019 (40,336 Patients)</span>
-                <span class="research-tag">Threshold Personalization</span>
-                <span class="research-tag">Paired Bootstrap (2,000 Replicates)</span>
-              </div>
-            </div>
-          </article>
-          <article class="research-entry reveal" aria-labelledby="research-jasal-title">
-            <div class="research-meta">
-              <span class="research-status-badge status-thesis">Undergraduate Thesis</span>
-              <p class="research-year">2025 &mdash; 2026</p>
-            </div>
-            <div class="research-entry-body">
-              <h3 class="research-entry-title" id="research-jasal-title">JASAL: A Remote Patient Health Monitoring System Driven by Federated Learning</h3>
-              <p class="research-institution">BRAC University &middot; Dhaka, Bangladesh</p>
-              <p class="research-desc">Developed and evaluated a federated learning framework for physiological anomaly detection using 32,796 patient records distributed across 10 non-IID client partitions. Investigated differential privacy, secure aggregation, adaptive patient profiling, interpretable anomaly detection, model quantization, and communication-efficient deployment.</p>
-              <ul class="research-bullets">
-                <li>Evaluated a deep autoencoder-based anomaly detection framework across non-IID federated clients.</li>
-                <li>Investigated differential privacy and secure multiparty computation against privacy reconstruction attacks.</li>
-                <li>Optimised the model for edge deployment using INT8 quantisation and communication-efficient training.</li>
-              </ul>
-              <div class="research-tags-row">
-                <span class="research-tag">Federated Learning</span>
-                <span class="research-tag">Differential Privacy</span>
-                <span class="research-tag">Anomaly Detection</span>
-                <span class="research-tag">Edge Deployment</span>
-                <span class="research-tag">PyTorch</span>
-              </div>
-            </div>
-          </article>
-          <article class="research-entry reveal" aria-labelledby="research-vlm-title">
-            <div class="research-meta">
-              <span class="research-status-badge status-ongoing">Ongoing Research</span>
-              <p class="research-year">2026 &mdash; Present</p>
-            </div>
-            <div class="research-entry-body">
-              <h3 class="research-entry-title" id="research-vlm-title">Trustworthy Vision-Language Models for Medical Image Understanding</h3>
-              <p class="research-desc">Investigating reliability challenges in medical vision-language models, including sycophancy, hallucination, calibration error, and robustness under misleading or conflicting prompts. The research aims to understand how multimodal foundation models behave under clinically consequential adversarial pressure.</p>
-              <div class="research-tags-row">
-                <span class="research-tag">Vision-Language Models</span>
-                <span class="research-tag">Medical AI</span>
-                <span class="research-tag">Trustworthy AI</span>
-                <span class="research-tag">Model Calibration</span>
-                <span class="research-tag">Robustness</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <p class="section-label reveal">Projects</p>
-        <h2 class="section-title reveal" id="projects-heading">Selected Engineering Projects</h2>
-        <p class="projects-intro reveal">A mix of research tools, applied ML systems, and full-stack applications. Most are available on GitHub.</p>
-        <div class="featured-projects">
-          <article class="project-row reveal" id="proj-promptpoisonlab" aria-labelledby="proj-ppl-title">
-            <div class="project-row-left">
-              <p class="project-number">01 &mdash; LLM Security</p>
-              <h3 class="project-row-title" id="proj-ppl-title">PromptPoisonLab</h3>
-              <p class="project-row-subtitle">LLM Security Benchmarking Toolkit</p>
-              <div class="project-row-tech"><span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">FAISS</span><span class="tech-tag">SentenceTransformers</span><span class="tech-tag">Docker</span></div>
-            </div>
-            <div class="project-row-right">
-              <p class="project-row-desc">A modular research toolkit for generating, organising, and evaluating prompt-poisoning datasets across more than 30 attack strategies.</p>
-              <ul class="project-row-highlights"><li>Implements evolutionary prompt mutation using genetic algorithms.</li><li>Uses FAISS-based semantic deduplication to reduce repeated attack samples.</li><li>Provides structured experiment logging and configurable risk evaluation.</li></ul>
-              <div class="project-row-links"><a href="https://github.com/juboraj-ahmed/PromptPoisionLab" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a></div>
-            </div>
-          </article>
-          <article class="project-row reveal" id="proj-pip" aria-labelledby="proj-pip-title">
-            <div class="project-row-left">
-              <p class="project-number">02 &mdash; LLM Security</p>
-              <h3 class="project-row-title" id="proj-pip-title">Prompt Injection Playground</h3>
-              <p class="project-row-subtitle">Interactive LLM Security Evaluation Framework</p>
-              <div class="project-row-tech"><span class="tech-tag">Python</span><span class="tech-tag">Streamlit</span><span class="tech-tag">OpenAI API</span><span class="tech-tag">OpenRouter API</span><span class="tech-tag">Plotly</span></div>
-            </div>
-            <div class="project-row-right">
-              <p class="project-row-desc">An extensible environment for simulating and evaluating more than 15 prompt-injection strategies against large language models.</p>
-              <ul class="project-row-highlights"><li>Supports heuristic evaluation and LLM-as-a-judge workflows.</li><li>Logs experiments in structured JSONL format for reproducibility.</li><li>Provides visual analysis of attack behaviour and model responses.</li></ul>
-              <div class="project-row-links"><a href="https://github.com/juboraj-ahmed/Prompt-Injection-Playground" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a></div>
-            </div>
-          </article>
-          <article class="project-row reveal" id="proj-classifier" aria-labelledby="proj-aca-title">
-            <div class="project-row-left">
-              <p class="project-number">03 &mdash; AI / ML</p>
-              <h3 class="project-row-title" id="proj-aca-title">AI Context Analyst</h3>
-              <p class="project-row-subtitle">Large-Scale Multi-Class Text Classification</p>
-              <div class="project-row-tech"><span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">LSTM</span><span class="tech-tag">Flask</span><span class="tech-tag">Docker</span></div>
-            </div>
-            <div class="project-row-right">
-              <p class="project-row-desc">A multi-class NLP pipeline comparing deep-learning and traditional machine-learning approaches on a dataset containing more than 1.45 million records.</p>
-              <ul class="project-row-highlights"><li>Combines LSTM-based classification with TF-IDF and logistic-regression baselines.</li><li>Includes modular preprocessing and class-balancing components.</li><li>Deploys inference through a Dockerised Flask application.</li></ul>
-              <div class="project-row-links"><a href="https://github.com/juboraj-ahmed/AI-Sentiment-Analyst" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a><a href="https://juboraj007-ai-sentiment-analyst.hf.space" class="proj-link proj-link-secondary" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a></div>
-            </div>
-          </article>
-          <article class="project-row reveal" id="proj-meditrack" aria-labelledby="proj-mt-title">
-            <div class="project-row-left">
-              <p class="project-number">04 &mdash; AI Web App</p>
-              <h3 class="project-row-title" id="proj-mt-title">MediTrack</h3>
-              <p class="project-row-subtitle">AI-Powered Health Risk Monitoring</p>
-              <div class="project-row-tech"><span class="tech-tag">Django</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Chart.js</span><span class="tech-tag">PostgreSQL</span></div>
-            </div>
-            <div class="project-row-right">
-              <p class="project-row-desc">A health-monitoring application that uses a Gradient Boosting classifier to estimate health-risk categories and visualise longitudinal user data.</p>
-              <ul class="project-row-highlights"><li>Supports low-, medium-, and high-risk health categorisation.</li><li>Provides interactive health-history and prediction visualisations.</li><li>Integrates a machine-learning inference pipeline with a Django backend.</li></ul>
-              <div class="project-row-links"><a href="https://github.com/juboraj-ahmed/MediTrack" class="proj-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a><a href="https://meditrack-1-xjxy.onrender.com" class="proj-link proj-link-secondary" target="_blank" rel="noopener noreferrer">Live Demo &rarr;</a></div>
-            </div>
-          </article>
-        </div>
-        <p class="additional-section-title reveal">More Projects</p>
-        <div class="additional-list reveal">
-          <div class="additional-item"><span class="additional-item-name">SonicVAE</span><p class="additional-item-desc">A ResNet-based variational autoencoder for learning latent representations from Mel spectrograms and exploring unsupervised music clustering.</p><div class="additional-item-tech"><span class="tech-tag">PyTorch</span><span class="tech-tag">librosa</span><span class="tech-tag">ResNet</span></div><a href="https://github.com/juboraj-ahmed/SonicVAE" class="additional-item-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a></div>
-          <div class="additional-item"><span class="additional-item-name">MediConnect</span><p class="additional-item-desc">Full-stack healthcare ecosystem connecting patients, doctors, and pharmacies via a Flask-based API architecture with real-time Socket.IO support.</p><div class="additional-item-tech"><span class="tech-tag">Flask</span><span class="tech-tag">Socket.IO</span><span class="tech-tag">SQLAlchemy</span></div><a href="https://github.com/juboraj-ahmed/MediConnect" class="additional-item-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a></div>
-          <div class="additional-item"><span class="additional-item-name">Smart Expense Splitter</span><p class="additional-item-desc">Fintech-inspired group expense management system with behaviour-based dynamic trust scoring for reliable balance calculation and settlement.</p><div class="additional-item-tech"><span class="tech-tag">Django</span><span class="tech-tag">DRF</span><span class="tech-tag">PostgreSQL</span></div><a href="https://github.com/juboraj-ahmed" class="additional-item-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a></div>
-          <div class="additional-item"><span class="additional-item-name">Climate Explorer</span><p class="additional-item-desc">Data-driven Django platform with modular backend logic to visualise complex climate metrics, built for maintainability and efficient API-driven data fetching.</p><div class="additional-item-tech"><span class="tech-tag">Django</span><span class="tech-tag">Python</span><span class="tech-tag">APIs</span></div><a href="https://github.com/juboraj-ahmed/Climate_Change_Project" class="additional-item-link" target="_blank" rel="noopener noreferrer">GitHub &rarr;</a></div>
-        </div>
-      </div>
-    </section>
-    <section id="education" aria-labelledby="education-heading">
-      <div class="container">
-        <p class="section-label reveal">Education</p>
-        <h2 class="section-title reveal" id="education-heading">Academic Background</h2>
-        <div class="education-entry reveal">
-          <div class="education-grid">
-            <div class="education-year"><p>Graduated Spring 2026</p></div>
-            <div class="edu-body">
-              <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
-              <p class="edu-school">BRAC University &mdash; Dhaka, Bangladesh</p>
-              <p class="edu-section-label">Research &amp; Academic Highlights</p>
-              <ul class="edu-notes">
-                <li>Undergraduate thesis on federated learning for privacy-preserving remote patient health monitoring.</li>
-                <li>Research involvement in trustworthy vision-language models for medical image understanding.</li>
-                <li>Drafted research documentation and technical reports using LaTeX for publication-ready precision.</li>
-                <li>Presented complex AI architectures to both technical and non-technical stakeholders.</li>
-              </ul>
-              <p class="edu-section-label">Selected Coursework</p>
-              <div class="edu-courses">
-                <span class="tech-tag">Artificial Intelligence</span>
-                <span class="tech-tag">Neural Networks</span>
-                <span class="tech-tag">Natural Language Processing</span>
-                <span class="tech-tag">Data Structures &amp; Algorithms</span>
-                <span class="tech-tag">Operating Systems</span>
-                <span class="tech-tag">Database Management Systems</span>
-                <span class="tech-tag">Software Engineering</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="blog" aria-labelledby="blog-heading">
-      <div class="container">
-        <p class="section-label reveal">Writing</p>
-        <h2 class="section-title reveal" id="blog-heading">Articles &amp; Papers</h2>
-        <p class="writings-intro reveal">Research reports, technical guides, and essays. Click any item to read in your browser.</p>
-        <div class="writings-list" id="writings-grid">
-          <article class="writing-entry reveal" data-date="2025-12-06">
-            <div class="writing-entry-meta"><span class="writing-year">2025</span><span class="writing-type">Critical Analysis</span></div>
-            <div class="writing-entry-body">
-              <h3 class="writing-entry-title">Akhand Bharat Conspiracy Theory</h3>
-              <p class="writing-entry-desc">A critical analysis of the "Akhand Bharat" ideology -- examining its historical roots, geopolitical implications, and impact on regional security in South Asia.</p>
-              <a href="writings/Akhand Bharat Conspiracy Theory.pdf" class="writing-read-link" target="_blank" rel="noopener noreferrer">Read Paper &rarr;</a>
-            </div>
-          </article>
-          <article class="writing-entry reveal" data-date="2025-06-01">
-            <div class="writing-entry-meta"><span class="writing-year">2025</span><span class="writing-type">Article</span></div>
-            <div class="writing-entry-body">
-              <h3 class="writing-entry-title">Can a Self-Driving Car's Architecture Power a Home Robot?</h3>
-              <p class="writing-entry-desc">Exploring whether the sensor fusion, perception, and decision-making stack behind autonomous vehicles can be adapted to drive next-generation home robotics.</p>
-              <a href="writings/Can_a_Self_Driving_Car_s_Architecture_Power_a_Home_Robot_.pdf" class="writing-read-link" target="_blank" rel="noopener noreferrer">Read Article &rarr;</a>
-            </div>
-          </article>
-          <article class="writing-entry reveal" data-date="2025-03-01">
-            <div class="writing-entry-meta"><span class="writing-year">2025</span><span class="writing-type">Policy Brief</span></div>
-            <div class="writing-entry-body">
-              <h3 class="writing-entry-title">Justice Denied: Confronting the Constitutional Breakdown Enabling Extrajudicial Killings in Bangladesh</h3>
-              <p class="writing-entry-desc">A policy brief examining the legal and constitutional failures that enable extrajudicial killings in Bangladesh and proposing reform pathways.</p>
-              <a href="writings/Policy Brief Justice Denied_ Confronting the Constitutional Breakdown Enabling Extrajudicial Killings in Bangladesh.pdf" class="writing-read-link" target="_blank" rel="noopener noreferrer">Read Brief &rarr;</a>
-            </div>
-          </article>
-          <article class="writing-entry reveal" data-date="2025-01-01">
-            <div class="writing-entry-meta"><span class="writing-year">2025</span><span class="writing-type">Technical Guide</span></div>
-            <div class="writing-entry-body">
-              <h3 class="writing-entry-title">Understanding Unix File Permissions and Extended Access Control Lists</h3>
-              <p class="writing-entry-desc">A comprehensive technical guide to Unix file permission models, ACLs, and practical strategies for securing files and directories in Linux environments.</p>
-              <a href="writings/Understanding_Unix_File_Permissions_and_Extended_Access_Control_Lists.pdf" class="writing-read-link" target="_blank" rel="noopener noreferrer">Read Guide &rarr;</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <p class="section-label reveal">Contact</p>
-        <h2 class="section-title reveal" id="contact-heading">Get in Touch</h2>
-        <div class="contact-layout">
-          <div class="contact-info reveal">
-            <p class="contact-intro">I'm always interested in discussing research ideas, machine learning, and opportunities to collaborate or build something meaningful. Feel free to reach out.</p>
-            <div class="contact-links-group">
-              <div class="contact-row"><span class="contact-row-label">Email</span><a href="mailto:juborajahmed0213@gmail.com">juborajahmed0213@gmail.com</a></div>
-              <div class="contact-row"><span class="contact-row-label">GitHub</span><a href="https://github.com/juboraj-ahmed" target="_blank" rel="noopener noreferrer">github.com/juboraj-ahmed</a></div>
-              <div class="contact-row"><span class="contact-row-label">LinkedIn</span><a href="https://www.linkedin.com/in/juboraj-ahmed-95709824a" target="_blank" rel="noopener noreferrer">linkedin.com/in/juboraj-ahmed</a></div>
-              <div class="contact-row"><span class="contact-row-label">Location</span><span>Dhaka, Bangladesh</span></div>
-            </div>
-          </div>
-          <div class="contact-availability-col reveal">
-            <div class="availability-block">
-              <div class="availability-header"><span class="availability-dot" aria-hidden="true"></span><span>Currently Available</span></div>
-              <p class="availability-desc">Open to Ph.D. positions, research collaborations, and project conversations starting 2026.</p>
-              <ul class="availability-items">
-                <li>Ph.D. research opportunities</li>
-                <li>Research collaborations in trustworthy AI and AI safety</li>
-                <li>Applied machine learning projects</li>
-                <li>LLM security and red-teaming research</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer id="footer">
-    <div class="footer-content">
-      <span class="footer-logo">Juboraj<span style="color:var(--accent)">.</span></span>
-      <p class="footer-copy">&copy; 2026 Juboraj Ahmed</p>
-      <a href="#hero" class="footer-back-top" aria-label="Back to top">Back to top <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg></a>
-    </div>
-  </footer>
-  <script src="js/main.js?v=2"></script>
+    </footer>
+    <script>
+        (() => { const root = document.documentElement; const toggle = document.querySelector('#theme-toggle'); const menu = document.querySelector('#menu-button'); const links = document.querySelector('#mobile-links'); let stored = null; try { stored = localStorage.getItem('juboraj-theme') } catch (e) { } if (stored === 'dark' || stored === 'light') root.dataset.theme = stored; function syncTheme() { const dark = root.dataset.theme === 'dark'; toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme'); toggle.setAttribute('title', dark ? 'Switch to light theme' : 'Switch to dark theme') } syncTheme(); toggle.addEventListener('click', () => { root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark'; try { localStorage.setItem('juboraj-theme', root.dataset.theme) } catch (e) { } syncTheme() }); function closeMenu() { links.classList.remove('open'); menu.setAttribute('aria-expanded', 'false'); menu.setAttribute('aria-label', 'Open menu') } menu.addEventListener('click', () => { const open = links.classList.toggle('open'); menu.setAttribute('aria-expanded', String(open)); menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu') }); links.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu)); document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu() }) })();
+    </script>
 </body>
+
 </html>
