@@ -150,6 +150,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 }
 .hero-link:hover::after { transform: scaleX(1); }
 .hero-link-sep { width: 1px; height: 14px; background: var(--border-strong); display: inline-block; }
+.link-icon { display: inline-block; vertical-align: -0.15em; margin-right: 0.35em; flex-shrink: 0; }
 
 .hero-portrait-col { padding-top: 6px; }
 .hero-portrait {
